@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Dictionary"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/user_filed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:hint="Enter a word"
+        android:textColorHint="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_btn"
+        android:foregroundGravity="center">
+
+        <TextView
+            android:id="@+id/result_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_filed"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:textSize="20sp" />
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/main_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_filed"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:text="Find the meaning of a word"
+        android:textColor="@color/white"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>
